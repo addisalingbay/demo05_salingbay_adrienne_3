@@ -1,33 +1,127 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" data-bs-theme="dark">
 <head>
-    <title>My BCIT Project</title>
-    <meta name="comp1800 template" content="My 1800 App">
+  <title>My BCIT Project</title>
+  <meta name="comp1800 template" content="My 1800 App">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#712cf9" />
 
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Other libraries go here -->
-
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="heroes.css" rel="stylesheet" />
 </head>
 
 <body>
+  <!-- nav bar -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand text-warning" href="#">
+        <img src="c:\Users\salin\Downloads\mountain.png" height="35" alt="hiking app logo">
+        HIKING APP
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">ABOUT US</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">DIRECTIONS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">SAVED HIKES</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-warning search-btn" type="submit">SEARCH</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!-- nav bar end-->
 
-    <!------------------------------>
-    <!-- Your HTML Layout go here -->
-    <!------------------------------>
-    <!-- Stuff for body goes here -->
+  <!-- hero start -->
+  <main>
+    <div class="b-example-divider"></div>
+    <div class="container my-5">
+      <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+        <div class="p-3 pt-lg-3">
+          <div class="px-4 py-5 my-5 text-center">
+            <img
+              class="d-block mx-auto mb-4"
+              src="c:\Users\salin\Downloads\tent.png"
+              alt="tent img"
+              width="72"
+              height="57"
+            />
+            <h1 class="display-5 fw-bold text-body-emphasis">WELCOME</h1>
+            <div class="col-lg-6 mx-auto">
+              <p class="lead mb-4">
+                Your next adventure starts here. Discover nearby trails, track your progress, and safely explore the great outdoors.
+              </p>
+              <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                <button type="button" class="btn btn-outline-warning btn-lg px-4 gap-3">
+                  GET STARTED
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
+          <img
+            class="rounded-lg-3"
+            src="bootstrap-docs.png"
+            alt=""
+            width="720"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="b-example-divider"></div>
+  </main>
+  <!-- hero end -->
 
+  <!-- cards start-->
+  <div class="container px-0 my-5">
+    <div class="d-flex flex-wrap gap-3">
 
-    <!---------------------------------------------->
-    <!-- Your own JavaScript functions go here    -->
-    <!---------------------------------------------->
+      <div class="card" style="flex: 1 1 16rem;">
+        <img src="c:\Users\salin\Downloads\Blog Voyage Chamonix _ un été dans les Alpes entre randonnée et bivouac.jpg" class="card-img-top" alt="mountain trail">
+        <div class="card-body">
+          <h5 class="card-title">TRAIL (1)</h5>
+          <p class="card-text">This sample text definitely contains some interesting details about this trail...</p>
+          <a href="#" class="btn btn-outline-warning">DIRECTIONS</a>
+        </div>
+      </div>
 
-    <!-- Link to scripts of your own -->
-    <!-- <script type="module" src="./src/main.js"></script> -->
+      <div class="card" style="flex: 1 1 16rem;">
+        <img src="c:\Users\salin\Downloads\hike trail!!!.jpg" class="card-img-top" alt="hiking trail 2">
+        <div class="card-body">
+          <h5 class="card-title">TRAIL (2)</h5>
+          <p class="card-text">This sample text definitely contains some interesting details about this trail...</p>
+          <a href="#" class="btn btn-outline-warning">DIRECTIONS</a>
+        </div>
+      </div>
 
+      <div class="card" style="flex: 1 1 16rem;">
+        <img src="c:\Users\salin\Downloads\Hiking🫰.jpg" class="card-img-top" alt="forest trail">
+        <div class="card-body">
+          <h5 class="card-title">TRAIL (3)</h5>
+          <p class="card-text">This sample text definitely contains some interesting details about this trail...</p>
+          <a href="#" class="btn btn-outline-warning">DIRECTIONS</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!--cards end-->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
